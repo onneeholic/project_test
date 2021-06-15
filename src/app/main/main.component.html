@@ -1,0 +1,14 @@
+<div style="background-color: rgb(250, 243, 235);width: 200px;height: 100vh;display: inline-block;">
+<input type="number" [(ngModel)]="acceptnum" step="0.1" (change)="cal();">
+</div>
+<div style="background-color:rgb(242, 245, 231);width: 73%;height: 100vh;display: inline-block;">
+    <select [(ngModel)]="checkcal" (change)="cal2();">
+        <option value="1">isPrime</option>
+        <option value="2">isFibonacci</option>
+      </select>
+</div>
+<div style="background-color:#eee;width: 300px;height: 100vh;display: inline-block;">
+{{res}}
+</div>
+
+<a [routerLink]="['/fildata']">Filter Data</a>
